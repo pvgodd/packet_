@@ -27,8 +27,8 @@ struct ip_h{
     uint8_t time_to_live;
     uint8_t protocol;
     uint16_t checksum;
-    struct in_addr src_ip;
-    struct in_addr dst_ip;
+    uint8_t src_ip[4];
+    uint8_t dst_ip[4];
 
 };
 
